@@ -149,8 +149,55 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">Pikachu << <a href='Pikachu.html'>Previous</a> <a href='Hello(w3).html'>Next</a> >> Hello(w3)<br /><h1>Work</h1>
-<br />Pikachu << <a href='Pikachu.html'>Previous</a> <a href='Hello(w3).html'>Next</a> >> Hello(w3)</div>
+    <div id="tipue_search_content">For迴圈(w6) << <a href='For迴圈(w6).html'>Previous</a> <br /><h1>For迴圈與函式(w7)</h1>
+<h4>原始碼 :</h4>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">const num m = 1;
+const num f = 0.0;
+const num k = 1;
+const num b = 1;
+rungeKutta(t0, x0, v0, t, h) {
+  int n = ((t - t0) / h).toInt();
+  double x = x0;
+  double v = v0;
+  print("${t0.toStringAsFixed(3)} \t ${x.toStringAsFixed(3)} \t ${v.toStringAsFixed(3)}");
+  for (int i = 1; i &lt;= n; i++) {
+    double xk1 = h * dxdt(t0, x, v);
+    double vk1 = h * dvdt(t0, x, v);
+    double xk2 = h * dxdt(t0 + 0.5 * h, x + 0.5 * xk1, v + 0.5 * vk1);
+    double vk2 = h * dvdt(t0 + 0.5 * h, x + 0.5 * xk1, v + 0.5 * vk1);
+    double xk3 = h * dxdt(t0 + 0.5 * h, x + 0.5 * xk2, v + 0.5 * vk2);
+    double vk3 = h * dvdt(t0 + 0.5 * h, x + 0.5 * xk2, v + 0.5 * vk2);
+    double xk4 = h * dxdt(t0 + h, x + xk3, v + vk3);
+    double vk4 = h * dvdt(t0 + h, x + xk3, v + vk3);
+    x = x + (1.0 / 6.0) * (xk1 + 2 * xk2 + 2 * xk3 + xk4);
+    v = v + (1.0 / 6.0) * (vk1 + 2 * vk2 + 2 * vk3 + vk4);
+    t0 = t0 + h;
+  print("${t0.toStringAsFixed(3)} \t ${x.toStringAsFixed(3)} \t ${v.toStringAsFixed(3)}");
+  }
+  return [x, v];
+}
+dxdt(t, x, v) {
+  return v;
+}
+dvdt(t, x, v) {
+  return (f - k * x - b * v) / m;
+}
+main() {
+  num t0 = 0;
+  num x0 = 1;
+  num v0 = 0;
+  num t = 5;
+  double h = 0.1;
+  rungeKutta(t0, x0, v0, t, h);
+}</pre>
+<p><a href="https://github.com/40823210/cp2019/blob/master/downloads/dart_ex/mass_spring_damping/mass_spring_damping.dart">程式碼</a></p>
+<p>###<a href="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark</a></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<h4><span>利用 Excel 繪出上述解微分方程式模擬結果 :</span></h4>
+<p></p>
+<p><img alt="" height="260" src="./../images/1.png" width="500"/></p>
+<p></p>
+<p><img alt="" height="221" src="./../images/2.png" width="500"/></p><br />For迴圈(w6) << <a href='For迴圈(w6).html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

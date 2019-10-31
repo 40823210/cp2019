@@ -3,20 +3,21 @@
 <p>機械設計便覽(乙級):<a href="/downloads/Computer-Aided Design and Drafting.pdf">Computer-Aided Design and Drafting.pdf</a> </p>
 <p><img alt="" height="526" src="/images/Pikachu2.PNG" width="532"/></p>
 <h1>Work</h1>
-<h4>圖片上傳</h4>
-<h5>圖片上傳-image files upload</h5>
-<p><span><img caption="false" height="373" src="/images/Capture02.PNG" width="803"/></span></p>
-<h5><span>皮卡丘-Pikachu</span></h5>
-<p><img alt="" height="876" src="/images/Capture01.PNG" width="803"/></p>
-<h2>Hello</h2>
+<h2>Hello(w3)</h2>
 <h4>原始碼 :</h4>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
     print("Pikachu!皮卡!");
   }</pre>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=5b59e62ad166b984e377718f7efeaf27" width="800"></iframe></p>
 <p><span>###</span><a href="https://dartpad.dev?id=5b59e62ad166b984e377718f7efeaf27">https://dartpad.dev?id=5b59e62ad166b984e377718f7efeaf27</a></p>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=5b59e62ad166b984e377718f7efeaf27" width="800"></iframe></p>
 <p></p>
-<h3>For迴圈</h3>
+<h2>圖片上傳(w4)</h2>
+<h5>圖片上傳-image files upload</h5>
+<p><span><img caption="false" height="373" src="/images/Capture02.PNG" width="803"/></span></p>
+<h5><span>皮卡丘-Pikachu</span></h5>
+<p><img alt="" height="876" src="/images/Capture01.PNG" width="803"/></p>
+<p></p>
+<h2>For迴圈(w6)</h2>
 <h4><span></span>原始碼 :</h4>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int i;
 int sum;
@@ -32,5 +33,48 @@ main(){
 <p> <a href="https://github.com/40823210/cp2019/blob/master/downloads/dart_ex/for/main.dart">程式碼</a>  </p>
 <p>###<a href="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark</a> </p>
 <p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<p></p>
-<p></p>
+<h2>For迴圈與函式(w7)</h2>
+<h4>原始碼 :</h4>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">const num m = 1;
+const num f = 0.0;
+const num k = 1;
+const num b = 1;
+rungeKutta(t0, x0, v0, t, h) {
+  int n = ((t - t0) / h).toInt();
+  double x = x0;
+  double v = v0;
+  print("${t0.toStringAsFixed(3)} \t ${x.toStringAsFixed(3)} \t ${v.toStringAsFixed(3)}");
+  for (int i = 1; i &lt;= n; i++) {
+    double xk1 = h * dxdt(t0, x, v);
+    double vk1 = h * dvdt(t0, x, v);
+    double xk2 = h * dxdt(t0 + 0.5 * h, x + 0.5 * xk1, v + 0.5 * vk1);
+    double vk2 = h * dvdt(t0 + 0.5 * h, x + 0.5 * xk1, v + 0.5 * vk1);
+    double xk3 = h * dxdt(t0 + 0.5 * h, x + 0.5 * xk2, v + 0.5 * vk2);
+    double vk3 = h * dvdt(t0 + 0.5 * h, x + 0.5 * xk2, v + 0.5 * vk2);
+    double xk4 = h * dxdt(t0 + h, x + xk3, v + vk3);
+    double vk4 = h * dvdt(t0 + h, x + xk3, v + vk3);
+    x = x + (1.0 / 6.0) * (xk1 + 2 * xk2 + 2 * xk3 + xk4);
+    v = v + (1.0 / 6.0) * (vk1 + 2 * vk2 + 2 * vk3 + vk4);
+    t0 = t0 + h;
+  print("${t0.toStringAsFixed(3)} \t ${x.toStringAsFixed(3)} \t ${v.toStringAsFixed(3)}");
+  }
+  return [x, v];
+}
+dxdt(t, x, v) {
+  return v;
+}
+dvdt(t, x, v) {
+  return (f - k * x - b * v) / m;
+}
+main() {
+  num t0 = 0;
+  num x0 = 1;
+  num v0 = 0;
+  num t = 5;
+  double h = 0.1;
+  rungeKutta(t0, x0, v0, t, h);
+}</pre>
+<p><a href="https://github.com/40823210/cp2019/blob/master/downloads/dart_ex/mass_spring_damping/mass_spring_damping.dart">程式碼</a></p>
+<p>###<a href="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark</a></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<p><img alt="" height="260" src="/images/1.png" width="500"/><img alt="" height="221" src="/images/2.png" width="500"/></p>
