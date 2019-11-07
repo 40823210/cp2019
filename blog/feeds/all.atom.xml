@@ -83,4 +83,41 @@ if PLAT_WIN
     SyntaxHighlighter.defaults['pad-line-numbers'] = false;
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.all();
-&lt;/script&gt;</content><category term="2019FallCP"></category></entry></feed>
+&lt;/script&gt;</content><category term="2019FallCP"></category></entry><entry><title>嵌入 Dartpad</title><link href="https://40823210.github.io/cp2019/blog/embedded-dartpad-to-blog.html" rel="alternate"></link><published>2019-10-31T18:00:00+08:00</published><updated>2019-10-31T18:00:00+08:00</updated><author><name>40823245</name></author><id>tag:40823210.github.io,2019-10-31:/cp2019/blog/embedded-dartpad-to-blog.html</id><summary type="html">&lt;p&gt;在此利用https://dartpad.github.io 將位於 downloads 目錄中的 dart 程式導入&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;在此利用https://dartpad.github.io 將位於 downloads 目錄中的 dart 程式導入&lt;/p&gt;
+
+
+&lt;script&gt;
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+&lt;/script&gt;
+
+&lt;!-- 取 Dart 程式的按鈕 --&gt;
+
+&lt;p&gt;&lt;button onclick="largest()"&gt;放大&lt;/button&gt; &lt;button onclick="original()"&gt;回復&lt;/button&gt; &lt;button onclick="getDart('hello')"&gt;Hello&lt;/button&gt; &lt;button onclick="getDart('for')"&gt;For Loop&lt;/button&gt; &lt;button onclick="getDart('sum')"&gt;Sum&lt;/button&gt; &lt;button onclick="getDart('runge_kutta')"&gt;Runge-Kutta&lt;/button&gt; &lt;button onclick="getDart('mass_spring_damping')"&gt;Mass Spring Damping&lt;/button&gt; &lt;button onclick="getHtmlDart('roc_flag')"&gt;ROC Flag&lt;/button&gt; &lt;button onclick="getHtmlDart('grid')"&gt;Grid&lt;/button&gt; &lt;button onclick="getHtmlDart('slithery')"&gt;Slithery&lt;/button&gt; &lt;button onclick="getFlutter('flutter1')"&gt;Flutter1&lt;/button&gt; &lt;button onclick="getFlutter('flutter2')"&gt;Flutter2&lt;/button&gt; &lt;button onclick="getFlutter('flutter3')"&gt;Flutter3&lt;/button&gt;&lt;/p&gt;
+
+&lt;!-- 內建放入的 Dart 原始碼 --&gt;
+
+&lt;p&gt;&lt;iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;amp;theme=dark" width="800"&gt;&lt;/iframe&gt;&lt;/p&gt;</content><category term="2019FallCP"></category></entry></feed>
