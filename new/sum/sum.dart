@@ -1,4 +1,3 @@
-  
 int i;
 int start=1;
 int end=10;

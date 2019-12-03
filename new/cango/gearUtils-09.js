@@ -1,13 +1,16 @@
 /*==========================================================================
   Filename: gearUtils-09.js
   By: Dr A.R.Collins
+
   JavaScript involute gear drawing utilities.
   Requires:
   'involuteBezCoeffs' can stand alone,
   'createGearTooth' and 'createIntGearTooth' generate SVG path data draw 
   commands defing the gear tooth profile.
+
   Kindly give credit to Dr A.R.Collins <http://www.arc.id.au/>
   Report bugs to tony at arc.id.au
+
   Date   |Description                                                   |By
   --------------------------------------------------------------------------
   20Feb13 First public release                                           ARC
