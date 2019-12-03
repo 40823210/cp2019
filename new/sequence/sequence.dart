@@ -2,7 +2,6 @@
 
 // define a F to C function
 
-
 // 每一個 Dart 程式都從 main() 開始執行
 main() {
   // 宣告 len 整數變數, 準備設為各字串的長度
@@ -34,11 +33,12 @@ main() {
     // https://api.dartlang.org/stable/2.6.1/dart-core/Object/runtimeType.html
     //print("目前 number 變數資料型別為: ${number.runtimeType}");
     // 之後就可以根據 type 與 number 執行各數列元素的溫度轉換
-    
     if (type == "C"){
-      print("C: $type, $number");
+      double type=number*(9/5)+32;
+      print("C:$number, =$type°F");
     }else{
-      print("F: $type, $number");
+      double type=(number-32)*(5/9);
+      print("F:$number, =$type°C");
     }
       
   } // for
