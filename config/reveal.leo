@@ -49,9 +49,9 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx="leo.20180902120523.10">## 40823210個人網站
 
-### KMOLab
+### 我誰 ( !
 
 &lt;small&gt;
 Created by [KMOLab](http://lab.kmol.info/)
@@ -72,11 +72,11 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20180902120523.12"># 投影片快捷鍵
 
-* [溫度轉換](https://40823212.github.io/cp2019/reveal/index.html#/2)
-* [亂數分組](https://40823212.github.io/cp2019/reveal/index.html#/3)
-* [重量轉換](https://40823212.github.io/cp2019/reveal/index.html#/4)
-* [國旗](https://40823212.github.io/cp2019/reveal/index.html#/5)
-* [心得](https://40823212.github.io/cp2019/reveal/index.html#/6)
+* [溫度轉換](https://40823210.github.io/cp2019/reveal/index.html#/2)
+* [亂數分組](https://40823210.github.io/cp2019/reveal/index.html#/3)
+* [重量轉換](https://40823210.github.io/cp2019/reveal/index.html#/4)
+* [國旗](https://40823210.github.io/cp2019/reveal/index.html#/5)
+* [心得](https://40823210.github.io/cp2019/reveal/index.html#/6)
 
 
    &lt;/script&gt;
@@ -265,9 +265,28 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20200107230703.2"></t>
-<t tx="leo.20200107230703.3"></t>
-<t tx="leo.20200107230737.1"></t>
+<t tx="leo.20200107230703.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200107230703.3">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20200107230737.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+</t>
 <t tx="leo.20200107230737.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
