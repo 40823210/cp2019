@@ -177,7 +177,7 @@ document.getElementById("iframe").height = 600 ;
 <p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('function')">Function</button> <button onclick="getDart('fun_parameter')">Function Parameter</button> <button onclick="getDart('fat_arrow')">Fat Arrow</button> <button onclick="getDart('temp1')">Temp 1</button></p>
 <p><button onclick="getDart('temperature')">temperature</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button><button onclick="getHtmlDart('random_grouping')">亂數分組</button></p>
 <h4>Flutter 程式</h4>
 <p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button></p>
 <h4>數列</h4>
@@ -212,12 +212,57 @@ document.getElementById("iframe").height = 600 ;
 }
 </script>
 <h4>w12任務一影片</h4>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/nnINUti76Yk" width="560"></iframe></p>
+<h2>國旗(w14)</h2>
+<p>=======</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/nnINUti76Yk" width="560"></iframe></p>
 <h2>w14</h2>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 724c43a74bd89197075485e255278620093006f0</p>
 <p>國旗</p>
 <p><canvas height="200" id="canvas" width="300"></canvas></p>
 <script src="/cp2019/new/roc_flag/roc_flag.js"></script>
 <p>溫度轉換 請輸入轉換溫度:<br/>(數字加上 C or F)<br/><br/><input id="temp" max="30" min="1" type="text" value="20F"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
-<script src="/cp2019/new/temp2/temp2.js"></script>
-<h2>查驗考試(w16)</h2>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/ulq3CrU1hiM" width="560"></iframe></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<p></p>
+<h1>w17考試</h1>
+<p></p>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('weight-dart')">weight-1</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight')">weight-2</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><br/><iframe height="600" id="iframe" src="https://dartpad.github.io/embed-dart.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight-dart&amp;theme=dark" width="800"></iframe></p>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823210&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823210&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823210&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<p>請輸入所要轉換的重量<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<script src="/../cp2019/downloads/dart_ex/weight/weight.js"></script>
+<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="fr">Draw FR</button> <button id="roc">Draw ROC</button> <button id="jp">Draw JP</button> <button id="ru">Draw RU</button> <button id="ne">Draw NE</button> <button id="ge">Draw GE</button> <button id="uk">Draw UK</button></p>
+<script src="/../cp2019/downloads/dart_ex/flag/flag.js"></script>
