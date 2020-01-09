@@ -54,10 +54,13 @@
 ### 我誰 ( !
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [40823210](https://40823210.github.io/cp2019/content/index.html)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[網誌](https://40823210.github.io/cp2019/blog/index.html)
+[網站](https://40823210.github.io/cp2019/content/index.html)
+[倉儲](https://github.com/40823210/cp2019/)
+
 
 
 </t>
