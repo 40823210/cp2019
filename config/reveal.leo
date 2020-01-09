@@ -300,6 +300,7 @@ vertical: body pane on the botton</t>
 &lt;iframe width="1000" height="600" src="https://dartpad.github.io/embed-html.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200107231129.1">#國旗
 &lt;iframe width="1000" height="600" src="https://dartpad.github.io/embed-html.html?gh_owner=40823210&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/flag&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
-<t tx="leo.20200107231133.1">由開學第一周到學期末，過程中學習了架設/編輯網站與運用dartpad程式進行編寫等技巧，也運用拍攝影片紀錄並且附上字幕，有助於對程式更加了解。</t>
+<t tx="leo.20200107231133.1">由開學第一周到學期末，過程中學習了架設/編輯網站與運用dartpad程式進行編寫等技巧，也運用拍攝影片紀錄並且附上字幕，有助於對程式更加了解。
+原本對於網路的過度依賴，卻對網路的了解甚少，雖然網路方便但背後卻藏滿複雜的程式碼，對於網路我或許還嫌不足，但我確實因為計算機程式這門課增進了許多。</t>
 </tnodes>
 </leo_file>
